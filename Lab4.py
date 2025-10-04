@@ -23,3 +23,13 @@ def tinh_nguyen_lieu(s1_bdx, s1_btc, s1_db):
     nguyen_lieu["dầu"] = dau_hop_banh
     return nguyen_lieu
 
+
+
+class sinhvien:
+    # các thuộc tính 
+    ten_sinh_vien = ""
+    nam_sinh = ""
+    diem = ""
+    # các phương thức
+    
+
