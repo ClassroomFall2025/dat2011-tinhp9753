@@ -1,16 +1,15 @@
+class sinhvien:
+    # Các thuộc tính
 
-class sinhvien :
-    # các thuộc tính 
-    ten_sinh_vien = ""
-    nam_sinh = ""
-    diem = ""
-    
-    # các phương thức
-    def them_sinh_vien(self, ten, namsinh, diem):
-        self.ten_sinh_vien = ten
-        self.nam_sinh = namsinh
-        self.diem = diem
-    def hien_thi_thong_tin(self):
-        print(f"Tên sinh viên: {self.ten_sinh_vien}")
-        print(f"Năm sinh: {self.nam_sinh}")
-        print(f"Điểm: {self.diem}")
+    # Các phương thức
+    def __init__(self, ten_sv, namsinh_sv, diem_sv):
+        self.ten_sinh_vien = ten_sv
+        self.nam_sinh = namsinh_sv
+        self.diem = diem_sv
+    def xuat_thong_tin_sv(self):
+        print("Tên sinh viên:", self.ten_sinh_vien)
+        print("Năm sinh:", self.nam_sinh)
+        print("Điểm:", self.diem)
+
+sv1 = sinhvien(" Chos", 2006, 0.5)
+sv1.xuat_thong_tin_sv()
