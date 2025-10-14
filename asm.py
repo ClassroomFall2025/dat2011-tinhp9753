@@ -12,3 +12,4 @@ def cn1():
     print("Chuc nang 1")
 def cn2():
     print("Chuc nang 2")
+
