@@ -18,5 +18,5 @@ class Vuong(ChuNhat):
         self.canh = canh
         super().__init__(self.canh, self.canh)
     def xuat(self):
-        print(f"Hình vuông có cạnh: {self.canh}")
+        print(f"Hình vuông có cạnh: {self.dai}")
     
