@@ -1,0 +1,55 @@
+import asm
+while True:
+    print(asm.menu)
+    lua_chon = input("Nhap lua chon cua ban (0 de thoat): ")
+    match lua_chon:
+        case "0":
+            print("Thoat chuong trinh")
+            break
+        case "1":
+            print("Nhap danh sach nhan vien")
+            asm.cn1()
+        case "2":
+            print("Doc thong tin nhan vien")
+            asm.cn2()
+        case "3":
+            print("Tim va hien thi nhan vien theo ma")
+        case "4":
+            print("Xoa nhan vien")
+        case "5":
+            print("Cap nhat thong tin nhan vien")
+        case "6":
+            print("Tim cac nhan vien theo khoang luong")
+        case "7":
+            print("Sap xep nhan vien theo ho va ten")
+        case "8":
+            print("Sap xep nhan vien theo thu nhap")
+        case "9":
+            print("Xuat 5 nhan vien co thu nhap cao nhat")
+        case _:
+            print("Lựa chọn không hợp lệ, vui lòng chọn lại.")
+
+def cn1():
+    print("chuc nang 1")
+def cn2():
+    print("chuc nang 2")
+def cn3():
+    print("chuc nang 3")
+def cn4():
+    print("chuc nang 4")
+def cn5():
+    print("chuc nang 5")
+def cn6():
+    print("chuc nang 6")
+def cn7():
+    print("chuc nang 7")
+def cn8():
+    print("chuc nang 8")
+def cn9():
+    print("chuc nang 9")
+def cn_khong_Hop_le():
+    print(" lua chon khong hop le")
+    
+ 
+
+    
