@@ -1,54 +1,42 @@
-import asm
+from quanlinv import *
+ql = QuanLynv()
+menu = """
+1. Nhập danh sách nhân viên
+2. Đọc thông tin nhân viên
+3. Tìm và hiển thị nhân viên theo mã
+4. Xóa nhân viên
+5. Cập nhật thông tin nhân viên
+6. Tìm các nhân viên theo khoảng lương
+7. Sắp xếp nhân viên theo họ và tên
+8. Sắp xếp nhân viên theo thu nhập
+9. Xuất 5 nhân viên có thu nhập cao nhất"""
 while True:
-    print(asm.menu)
+    print(menu)
     lua_chon = input("Nhap lua chon cua ban (0 de thoat): ")
     match lua_chon:
         case "0":
             print("Thoat chuong trinh")
             break
         case "1":
-            print("Nhap danh sach nhan vien")
-            asm.cn1()
+            ql.nhap_dsnv()
         case "2":
             print("Doc thong tin nhan vien")
-            asm.cn2()
         case "3":
-            print("Tim va hien thi nhan vien theo ma")
+            ql.tim_nhan_vien_theo_ma()
         case "4":
-            print("Xoa nhan vien")
+            pass
         case "5":
-            print("Cap nhat thong tin nhan vien")
+            pass
         case "6":
-            print("Tim cac nhan vien theo khoang luong")
+            ql.tim_nhan_vien_theo_khoang_luong()
         case "7":
-            print("Sap xep nhan vien theo ho va ten")
+            ql.sap_xep_theo_ho_ten()
         case "8":
-            print("Sap xep nhan vien theo thu nhap")
+            ql.sap_xep_theo_thu_nhap()
         case "9":
-            print("Xuat 5 nhan vien co thu nhap cao nhat")
+            ql.xuat_5_nhan_vien_thu_nhap_cao_nhat()
         case _:
-            print("Lựa chọn không hợp lệ, vui lòng chọn lại.")
-
-def cn1():
-    print("chuc nang 1")
-def cn2():
-    print("chuc nang 2")
-def cn3():
-    print("chuc nang 3")
-def cn4():
-    print("chuc nang 4")
-def cn5():
-    print("chuc nang 5")
-def cn6():
-    print("chuc nang 6")
-def cn7():
-    print("chuc nang 7")
-def cn8():
-    print("chuc nang 8")
-def cn9():
-    print("chuc nang 9")
-def cn_khong_Hop_le():
-    print(" lua chon khong hop le")
+            print("Lua chon khong hop le, vui long chon lai")
     
  
 
