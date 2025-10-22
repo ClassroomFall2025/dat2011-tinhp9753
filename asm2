@@ -1,0 +1,43 @@
+from quanlinv import *
+ql = QuanLynv()
+menu = """
+1. Nhập danh sách nhân viên
+2. Đọc thông tin nhân viên
+3. Tìm và hiển thị nhân viên theo mã
+4. Xóa nhân viên
+5. Cập nhật thông tin nhân viên
+6. Tìm các nhân viên theo khoảng lương
+7. Sắp xếp nhân viên theo họ và tên
+8. Sắp xếp nhân viên theo thu nhập
+9. Xuất 5 nhân viên có thu nhập cao nhất"""
+while True:
+    print(menu)
+    lua_chon = input("Nhap lua chon cua ban (0 de thoat): ")
+    match lua_chon:
+        case "0":
+            print("Thoat chuong trinh")
+            break
+        case "1":
+            ql.nhap_dsnv()
+        case "2":
+            print("Doc thong tin nhan vien")
+        case "3":
+            ql.tim_nhan_vien_theo_ma()
+        case "4":
+            pass
+        case "5":
+            pass
+        case "6":
+            ql.tim_nhan_vien_theo_khoang_luong()
+        case "7":
+            ql.sap_xep_theo_ho_ten()
+        case "8":
+            ql.sap_xep_theo_thu_nhap()
+        case "9":
+            ql.xuat_5_nhan_vien_thu_nhap_cao_nhat()
+        case _:
+            print("Lua chon khong hop le, vui long chon lai")
+    
+ 
+
+    

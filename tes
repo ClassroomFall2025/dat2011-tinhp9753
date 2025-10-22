@@ -1,0 +1,11 @@
+pattern = r'[0-9]'
+test_string = 'Version 2.0'
+result = re.search(pattern, test_string)
+print("tim kiem thanh cong." if result else "tim kiem that bai.")
+
+
+import re
+pattern = r"[abc]"
+test_string = "apple"
+result = re.search(pattern, test_string)
+print("tim kiem thanh cong." if result else "tim kiem that bai.")

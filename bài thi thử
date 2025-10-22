@@ -1,0 +1,26 @@
+class SinhVien:
+    def __init__(self, ma, ten, nganh):
+        self.ma = ma
+        self.ten = ten
+        self.nganh = nganh
+
+    def get_diem(self):
+        return 8  
+
+    def get_hoc_luc(self):
+        diem = self.get_diem()
+        if diem >= 9:
+            return "Giỏi"
+        elif diem >= 6.5:
+            return "Khá" 
+            return "Trung bình"
+        else:
+            return "Yếu kém"
+
+
+    def xuat(self):
+        print(f"Mã: {self.ma}, Tên: {self.ten}, Ngành: {self.nganh}, Điểm: {self.get_diem()}, Học lực: {self.get_hoc_luc()}")
+
+
+sv1 = SinhVien("PS44812", "PHẠM MINH TÌNH", "CNTT")
+sv1.xuat()
